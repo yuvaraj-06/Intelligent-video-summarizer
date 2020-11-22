@@ -45,5 +45,14 @@ Improving the speed of the algorithm and application was most important challeng
 ## GUI IMAGES
 <img src="https://github.com/yuvaraj-06/Tech_Doc/blob/main/img1.JPG?raw=true">
 
+## GUI INTERFACE
+<img src="https://github.com/yuvaraj-06/Tech_Doc/blob/main/img3.JPG?raw=true">
+
+## SELECT ANY FILE AS A INPUT FOR VIDEO SUMMARIZER
+<img src="https://github.com/yuvaraj-06/Tech_Doc/blob/main/img4.JPG?raw=true">
+
+## ADD A PLAYLIST OF VIDEOS LIKE A BATCH OF VIDEOS AT ONCE
+<img src="https://github.com/yuvaraj-06/Tech_Doc/blob/main/img5.JPG?raw=true">
+
 ## SUBTITLES OF THE VIDEO WITH MEDIA PLAYER SETTINGS
 <img src="https://github.com/yuvaraj-06/Tech_Doc/blob/main/img2.JPG?raw=true">
