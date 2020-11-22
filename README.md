@@ -5,4 +5,6 @@ The aim of this project is to develop a user friendly and efficient python appli
 
 # Tech-Stack used:
 
+In this project we have attempted to create the tec-stack of the proposed solution from scratch. The Tech-stack is Pyqt5 python module for desiging the custom video player to display the summarized video with subtitles and advanced options, Speech to text api and webscrapping was used to get text from the videeo clip in an effient manner, and custom python natural language processing code to comprehend out put of Speech to text api to filter out the important sentences based on the keywords. 
+
 # challenges of proposed solution:
