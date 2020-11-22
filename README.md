@@ -5,17 +5,30 @@ The aim of this project is to develop a user friendly and efficient python appli
 
 # Tech-Stack used:
 
+PyQt5, Speech to text api ,Custom NLP code
+
 In this project we have attempted to create the tec-stack of the proposed solution from scratch. The Tech-stack is Pyqt5 python module for desiging the custom video player to display the summarized video with subtitles and advanced options, Speech to text api and webscrapping was used to get text from the videeo clip in an effient manner, and custom python natural language processing code to comprehend out put of Speech to text api to filter out the important sentences based on the keywords. 
 
 # Custom natural language processing in detail:
 
-We have mainly used two statistical methods to extract keywords from the transcript generated.
+We performed two things to extract important lines from the transcript generated 
+1 Extraction of keywords from the transcript
+2 Extraction of key sentences from the transcript using these key words
 
-One is the Frequency method where we sort the words on basis of their frequency of occurrence in the whole transcript, and assign these frequency scores to them accordingly and then extract key lines from the transcript using them.
+So to extract keywords, We used a statistical method called TFIDF scores.
 
-The second method is the TF-IDF(Term Frequency Inverse Document Frequency) where we not just calculate the frequency scores like we did in the previous method but also calculate frequency of occurrence of every keyword generated in the previous method in a every sentence. We then multiply both these in-line frequencies and whole-text-frequencies of every word (which gives a product called the TFIDF score) and then extract key lines using these scores.
+In this firstly we sort the words on basis of their frequency of occurrence in the whole transcript from highest occurrence to lowest occurrence. Each of these lines are assigned their corresponding frequency score 
 
-In both of these situations we extract the key lines from keywords by picking the sentences that have top 70 percentile  Levlstein ratios with all the key words generated above and they become our key lines.
+Then we take the words from the previously arranged order, calculate its frequency of occurrence per line and multiple this with the frequency score of the word which gives us a TFIDF score
+
+Now finally to make our program extract words more efficiently we perform a Wikipedia search on the topic of speech collect all the hyperlink text phrases present in this page and perform another layer of Wikipedia search on each of these hypertext phrases. Now we make a record of all the key phrases in this two layer Wikipedia search. The words within the top 70 percentile TFIDF scores and these Wikipedia key phrase collection together make our final key words collection. 
+
+This way we also grab the words that are less frequent yet relevant to the topic
+
+Finally we extract the key lines, by picking those sentences from the transcript which have a high structural match with the keyword collection we made. We calculate this structural correlation using Levstien distances. We again assign a score to every sentence based on their correlation and the number of key words it has.
+The  sentences within the top 70 percentile sentence scores become our key lines.
+
+# Design of PyQT5 Application
 
 # challenges of proposed solution:
 
