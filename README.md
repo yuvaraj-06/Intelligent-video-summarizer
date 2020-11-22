@@ -35,10 +35,7 @@ Now finally to make our program extract words more efficiently we perform a Wiki
 This way we also grab the words that are less frequent yet relevant to the topic
 
 Finally we extract the key lines, by picking those sentences from the transcript which have a high structural match with the keyword collection we made. We calculate this structural correlation using Levstien distances. We again assign a score to every sentence based on their correlation and the number of key words it has.
-The  sentences within the top 70 percentile sentence scores become our key lines.
-
-# Design of PyQT5 Application
-
+The  sentences within the top 70 percentile sentence scores become our key lines. 
 # challenges of proposed solution:
 
 Improving the speed of the algorithm and application was most important challenge we faced. To use the api effectively we used multiple api calls in a mutlithreaded manner and also multithreading was used while converting and preparing large video files (over 40 mins) for processing.  
