@@ -35,5 +35,5 @@ The  sentences within the top 70 percentile sentence scores become our key lines
 Improving the speed of the algorithm and application was most important challenge we faced. To use the api effectively we used multiple api calls in a mutlithreaded manner and also multithreading was used while converting and preparing large video files (over 40 mins) for processing.  
 ## GUI IMAGES
 <img src="https://github.com/yuvaraj-06/Tech_Doc/blob/main/img1.JPG?raw=true">
-#SUBTITLES OF THE VIDEO WITH MEDIA PLAYER SETTINGS
+## SUBTITLES OF THE VIDEO WITH MEDIA PLAYER SETTINGS
 <img src="https://github.com/yuvaraj-06/Tech_Doc/blob/main/img2.JPG?raw=true">
