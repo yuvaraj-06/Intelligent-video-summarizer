@@ -18,3 +18,5 @@ The second method is the TF-IDF(Term Frequency Inverse Document Frequency) where
 In both of these situations we extract the key lines from keywords by picking the sentences that have top 70 percentile  Levlstein ratios with all the key words generated above and they become our key lines.
 
 # challenges of proposed solution:
+
+Improving the speed of the algorithm and application was most important challenge we faced. To use the api effectively we used multiple api calls in a mutlithreaded manner and also multithreading was used while converting and preparing large video files (over 40 mins) for processing.  
