@@ -1,4 +1,4 @@
-# Tech_Doc - open innovation
+
 
 # Instructions to run application:
 
